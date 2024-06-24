@@ -1,0 +1,148 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 20px;
+}
+
+.banner-container {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 620px;
+  background-color: #333333;
+  text-align: center;
+  line-height: 620px;
+  color: #ffffff;
+  font-size: 50px;
+  margin-bottom: 60px;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.heading {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.subheading {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.heading,
+.subheading,
+.two-columns {
+  width: 60%;
+  text-align: left;
+}
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+}
+.column {
+  width: 45%;
+  box-sizing: border-box;
+  text-align: left;
+}
+.products-section .heading,
+.products-section .subheading {
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.featured-product-heading {
+  font-size: 40px;
+  margin-top: 80px;
+}
+.featured-product-subheading {
+  font-size: 30px;
+  margin-bottom: 80px;
+}
+.featured-product-heading,
+.featured-product-subheading {
+  text-align: center;
+  width: 100;
+}
+.product {
+  position: relative;
+  width: 30%;
+  height: 620px;
+  background-color: #ccc;
+  text-align: left;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.product h4,
+.product p {
+  position: absolute;
+  left: 10px;
+}
+.product h4 {
+  bottom: 50px;
+  margin: 0;
+}
+.product p {
+  bottom: 10px;
+}
+.newsletter {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter input[type="email"] {
+  padding: 10px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+/* Responsive Rules */
+@media (max-width: 1080px) {
+  .column,
+  .newsletter input[type="email"] {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .heading,
+  .subheading {
+    margin-left: -40%;
+  }
+  .two-columns {
+    width: 100%;
+    flex-direction: column;
+  }
+  .column {
+    margin-bottom: 20px;
+  }
+  .products {
+    justify-content: center;
+  }
+  .product {
+    width: 80%;
+    height: 600px;
+    margin-bottom: 20px;
+  }
+  .newsletter {
+    flex-direction: column;
+  }
+}
